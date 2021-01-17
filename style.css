@@ -1,0 +1,134 @@
+:root{
+    --primary-dark-color: hsl(185,75%,39%);
+    --primary-darker-color: hsl(229,23%,23%);
+    --primary-gray-color: hsl(227,10%,46%);
+    --neutral-color: hsl(0,0%,59%);
+    --fs-name-stats: 18px;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* position: relative; */
+    font-family: 'Kumbh Sans', sans-serif;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    align-items: center;
+    width: 100vw;
+    height:100%; 
+
+    background-color: var(--primary-dark-color);
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: top -50vh left -10vw, bottom -60vh right -10vw;
+
+    
+}
+
+
+ .main-section{
+    padding: ;
+    margin: 0 auto; 
+    width: 400px;
+    height: 45em;
+    
+} 
+
+.sub-section{
+
+    position: absolute;
+
+    background-color: #fff;
+    top: 8em;
+    width:25em;
+    height:420px ;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.sub-section .card-top{
+    background-image: url(/images/bg-pattern-card.svg);
+    background-size: contain;
+    height: 9rem;
+    position: relative;
+    
+}
+
+.sub-section .card-top img{
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: relative;
+    top: 5.9em;
+}
+
+
+.victors-info {
+    position: relative;
+    top: 5em;
+}
+.victors-info h2{
+    padding-bottom: 1rem;
+}
+
+.victors-info span{
+    color: var(--neutral-color);
+    font-weight: 500;
+}
+.victors-info small{
+    color: var(--neutral-color);
+    text-transform: capitalize;
+    font-weight: 400;
+    padding: 2rem;
+}
+
+hr{
+    position: relative;
+    top: 7em;
+    color: var(--neutral-color);
+    opacity: 0.3;
+}
+
+.victors-numbers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7em;
+    text-transform: capitalize;
+}
+.victors-numbers h1{
+    margin-bottom: 0.7rem;
+    font-weight: 700;
+}
+
+.victors-numbers p{
+    color: var(--neutral-color);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 3px ;
+}
+
+.card{
+    margin: 2rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+
+
+
+    
