@@ -1,0 +1,108 @@
+.header{
+    background-image: url(/images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    @include tablet{
+        padding: 0 2rem;
+    }
+    
+    @include mobile{
+        background-image: url(/images/mobile/image-hero.jpg);
+        padding: 3rem 2rem;
+    }
+    .nav{
+        
+        @include xlarge{
+            padding-top: 3rem;
+        }
+        @include tablet{
+            padding-top: 3rem;
+        }
+        .logo{
+            img{
+                position: absolute;
+                z-index: 3;
+                width: 8rem;
+                @include xlarge{
+                    width: 9rem;
+                }
+            }
+        }
+        .nav-links{
+            a{
+                color: $white;
+                font-size: 0.875rem;
+                opacity: 0.8;
+                &::after{
+                    content: '';
+                    width: 0px;
+                    position: absolute;
+                    height: 3px;
+                    background: $white;
+                    top: 73px;
+                    margin-left: -36px;
+                    transition: width 300ms ease-in-out;
+                   
+                }
+                 &:not(:last-child){
+                    margin-right: 1rem;
+                }
+                 &:hover{
+                        &::after{
+                            width: 25px;
+                        }
+                    }
+               
+            }
+        }
+    }
+
+    // mobile links or menu
+    .mobile-links{
+        background-color: $black;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 7rem 2rem;
+        height: 100vh;
+        z-index: 2;
+        transition: all 300ms ease-in;
+        a{
+            display: block;
+            color: $dark-gray;
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-top: 2rem;
+            transition:  all 300ms ease-in-out;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .experience{
+        padding: 6rem 0;
+        @include mobile{
+            padding-bottom: 8rem;
+
+        }
+        h1{
+            border: 2px solid $white;
+            font-size: 2.25rem;
+            font-family: 'Josefin Sans', sans-serif;
+            width: 100%;
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            color: $white;
+            @include tablet{
+                width: 60%;
+            }
+            @include xlarge{
+            font-size: 4rem;
+                width: 61%;
+                padding: 1rem;
+            }
+        }
+    }
+}
